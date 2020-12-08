@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher or Lower</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/jsTutorialLogo.png" alt="JS tutorial logo">
+            </a>
+        </nav>
+        <div id="headline">
+            <h1>Higher or Lower Game</h1>
+        </div>
+    </header>
+
+    <main id="game-main">
+        <section id="playerOne">
+            <span id="edit-name-p1">
+                <h3 id="p1Name">Player 1 <i class="fa fa-pencil" aria-hidden="true"></i></h3>
+            </span>
+            <div class="controls">
+                <label>Higher
+                    <input type="radio" name="player1" class="controlBtns" id="player1High" />
+                </label>
+                <p class="points-p">Points: <span id="player1Points">0</span></p>
+                <label>Lower
+                    <input type="radio" name="player1" class="controlBtns" id="player1Low" />
+                </label>
+            </div>
+        </section>
+        <section id="numberGen">
+            <h2>Community Number</h2>
+            <p id="explainer">
+                Roll a random number using the button below.<br>
+                Afterwards each player guess whether the next number is higher or lower.
+            </p>
+            <div class="controls">
+                <button id="rollBtn">Roll Number</button>
+                <p id="roll">Roll Me!</p>
+            </div>
+        </section>
+        <section id="playerTwo">
+            <span id="edit-name-p2">
+                <h3 id="p2Name">Player 2 <i class="fa fa-pencil" aria-hidden="true"></i></h3>
+            </span>
+            <div class="controls">
+                <label>Higher
+                    <input type="radio" name="player2" class="controlBtns" id="player2High" />
+                </label>
+                <p class="points-p">Points: <span id="player2Points">0</span></p>
+                <label>Lower
+                    <input type="radio" name="player2" class="controlBtns" id="player2Low" />
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h5 id="cpryear"></h5>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
